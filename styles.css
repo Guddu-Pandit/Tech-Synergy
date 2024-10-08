@@ -135,7 +135,7 @@ nav ul li a:hover {
   margin: 20px;
   padding-top: 50px;
   display: inline-block;
-  font-size: 30px;
+  font-size: 35px;
   color: #6c5ce7;
   position: relative;
   letter-spacing: 2px;
@@ -160,7 +160,7 @@ nav ul li a:hover {
   text-align: left;
 }
 .about-us .row .content h3 {
-  font-size: 35px;
+  font-size: 30px;
   color: #6c5ce7;
 }
 .about-us .row .image img {
