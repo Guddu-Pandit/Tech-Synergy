@@ -228,6 +228,15 @@ nav ul li a:hover {
   .menu-icon {
     display: block;
   }
+  .about .row{
+    display: flex;
+    flex-flow: column;
+    padding:0 20px;
+  }
+  .about-us .row .image img {
+    width: 100vw;
+  }
+
 }
 
 @keyframes waves {
