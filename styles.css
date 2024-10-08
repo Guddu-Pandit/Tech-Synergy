@@ -6,14 +6,16 @@
 }
 html {
   scroll-behavior: smooth;
+  text-transform: capitalize;
 }
+/* -------nav------ */
 nav {
   padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* background-color: blue; */
-  position: fixed;
+  position: absolute;
   height: 70px;
   width: 100%;
   z-index: 100;
@@ -21,6 +23,7 @@ nav {
 .logo {
   color: #ffff;
   text-decoration: none;
+  font-size: 25px;
 }
 nav ul {
   display: flex;
@@ -33,6 +36,10 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #ffff;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #353333;
 }
 .menu-icon {
   color: #ffff;
@@ -43,6 +50,7 @@ nav ul li a {
   transition: all 0.5s;
 }
 
+/* ----------home---------- */
 .wave {
   position: absolute;
   bottom: -0.5rem;
@@ -50,7 +58,7 @@ nav ul li a {
   height: 9rem;
   width: 100%;
   background: url(Images/wave.png);
-  background-size: 100rem 11rem;
+  background-size: 100rem 10rem;
   background-repeat: repeat-x;
   animation: waves 10s linear infinite;
 }
@@ -61,6 +69,42 @@ nav ul li a {
 .wave3 {
   animation-duration: 4s;
   opacity: 0.5;
+}
+
+.home h1 {
+  color: #ffff;
+  display: flex;
+  font-size: 55px;
+  /* margin-top: -150px; */
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.home h3 {
+  color: #ffff;
+  display: flex;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+.home button {
+  height: 40px;
+  width: 190px;
+  background: #fff;
+  color: #444;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  transition: ease 0.5s;
+}
+
+.home button:hover {
+  color: #fff;
+  background: #353333;
 }
 
 .home {
@@ -77,6 +121,84 @@ nav ul li a {
   overflow: hidden !important;
 }
 
+/* --------about--------- */
+
+.about-us {
+  min-height: 100vh;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  overflow: hidden !important;
+}
+
+.about-us h1 {
+  margin: 20px;
+  padding-top: 50px;
+  display: inline-block;
+  font-size: 30px;
+  color: #6c5ce7;
+  position: relative;
+  letter-spacing: 2px;
+  /* border: 1px solid #6C5CE7; */
+}
+.about-us .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px;
+}
+
+.about-us .row .content p {
+  font-size: 14px;
+  color: #333;
+  padding: 10px 0;
+  /* letter-spacing: 1px; */
+  line-height: 20px;
+}
+
+.about-us .row .content {
+  text-align: left;
+}
+.about-us .row .content h3 {
+  font-size: 35px;
+  color: #6c5ce7;
+}
+.about-us .row .image img {
+  width: 50vw;
+}
+.about-us .row .content button {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  background: #6c5ce7;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  width: 150px;
+  font-size: 17px;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);;
+}
+
+         /* --------service--------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   nav ul {
     position: absolute;
@@ -91,10 +213,17 @@ nav ul li a {
     overflow: hidden;
   }
   nav ul li {
-    padding: 20px;
+    padding: 20px 100vw;
+    color: #fff;
+  }
+  nav ul li:hover {
+    background: #444;
   }
   nav ul li a {
     color: black;
+  }
+  nav ul li a:hover {
+    color: #fff;
   }
   .menu-icon {
     display: block;
