@@ -8,6 +8,36 @@ html {
   scroll-behavior: smooth;
   text-transform: capitalize;
 }
+
+ /* -------preloader-------- */
+
+ .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.loader img {
+  height: 20%;
+}
+.disppear {
+  animation: preloader 1s forwards;
+}
+@keyframes preloader {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
 /* -------nav------ */
 nav {
   padding: 10px 30px;
@@ -200,6 +230,9 @@ nav ul li a:hover {
 
 
 @media (max-width: 768px) {
+  html{
+    font-size: 50%;
+  }
   nav ul {
     position: absolute;
     top: 70px;
@@ -228,9 +261,8 @@ nav ul li a:hover {
   .menu-icon {
     display: block;
   }
-  .about .row{
-    display: flex;
-    flex-flow: column;
+  .about-us .row{
+    flex-flow: column-reverse;
     padding:0 20px;
   }
   .about-us .row .image img {
