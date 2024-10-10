@@ -1,3 +1,4 @@
+        // ----For preload----
 const loader = document.querySelector(".loader")
 
 window.addEventListener("load", preload);
@@ -7,8 +8,7 @@ function preload() {
 }
 
 
-
-
+        // ----For nav ----
 const navlinks = document.querySelector(".nav-links");
 navlinks.style.maxHeight = "0px";
 const menuicon = document.querySelector("i");
@@ -21,3 +21,9 @@ menuicon.addEventListener("click", () => {
         navlinks.style.maxHeight = "0px";
     }
 });
+
+
+    // ----For No one right click for code----
+// document.addEventListener("contextmenu", function(e){
+//     e.preventDefault()
+// },false);
