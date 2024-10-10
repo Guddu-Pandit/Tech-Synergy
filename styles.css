@@ -9,9 +9,9 @@ html {
   text-transform: capitalize;
 }
 
- /* -------preloader-------- */
+/* -------preloader-------- */
 
- .loader {
+.loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,8 +35,6 @@ html {
     visibility: hidden;
   }
 }
-
-
 
 /* -------nav------ */
 nav {
@@ -206,14 +204,71 @@ nav ul li a:hover {
   height: 35px;
   width: 150px;
   font-size: 17px;
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-         /* --------service--------- */
+/* --------service--------- */
 
+.services {
+  width: 100vw;
+  text-align: center;
+}
 
+.services h1 {
+  margin: 20px;
+  padding-top: 50px;
+  display: inline-block;
+  font-size: 35px;
+  color: #6c5ce7;
+  position: relative;
+  letter-spacing: 2px;
+  /* border: 1px solid #6C5CE7; */
+}
 
+.services .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  /* width: 100vw; */
+  margin: 40px 0;
+}
 
+.services .row .image img {
+   width: 50vw;
+   height: 55vh;
+}
+
+.services .row .content {
+  text-align: left;
+  padding: 0 3rem;
+}
+
+.services .row .content h3 {
+  font-size: 1.7rem;
+  color: #6c5ce7;
+}
+
+.services .row .content p {
+  font-size: .85rem;
+  color: #333;
+  padding: 1rem 0;
+  line-height: 20px;
+}
+
+.services .row .content button {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  background: #6c5ce7;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  width: 150px;
+  font-size: 17px;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  text-transform: capitalize;
+}
 
 
 
@@ -230,7 +285,7 @@ nav ul li a:hover {
 
 
 @media (max-width: 768px) {
-  html{
+  html {
     font-size: 50%;
   }
   nav ul {
@@ -261,14 +316,23 @@ nav ul li a:hover {
   .menu-icon {
     display: block;
   }
-  .about-us .row{
+  .about-us .row {
     flex-flow: column-reverse;
-    padding:0 20px;
+    padding: 0 20px;
   }
   .about-us .row .image img {
     width: 100vw;
   }
-
+  .services .row {
+    flex-flow: column-reverse;
+    padding: 0 20px;
+  }
+  .services .row:nth-child(even){
+    flex-flow: column;
+  }
+  .services .row .image img {
+    width: 100vw;
+  }
 }
 
 @keyframes waves {
