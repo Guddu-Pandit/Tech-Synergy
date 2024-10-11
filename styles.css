@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 html {
@@ -222,7 +224,6 @@ nav ul li a:hover {
   color: #6c5ce7;
   position: relative;
   letter-spacing: 2px;
-  /* border: 1px solid #6C5CE7; */
 }
 
 .services .row {
@@ -250,7 +251,7 @@ nav ul li a:hover {
 }
 
 .services .row .content p {
-  font-size: .85rem;
+  font-size: .9rem;
   color: #333;
   padding: 1rem 0;
   line-height: 20px;
@@ -270,13 +271,148 @@ nav ul li a:hover {
   text-transform: capitalize;
 }
 
+  /* ----internship---- */
 
+.features {
+  width: 100vw;
+  text-align: center;
+  padding: 0 3%;
+}
+.features h1 {
+  margin: 20px;
+  padding-top: 50px;
+  display: inline-block;
+  font-size: 35px;
+  color: #6c5ce7;
+  position: relative;
+  letter-spacing: 2px;
+}
+.features .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.features .box-container .box {
+  flex: 1 1 18rem;
+  background: #fff;
+  border-radius: .5rem;
+  border: .1rem solid rgba(0, 0, 0, .2);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  margin: 1rem;
+  padding: 2rem 1rem;
+  border-radius: .5rem;
+  text-align: center;
+}
+.features .box-container .box img {
+  height: 10rem;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+.features .box-container .box h3 {
+  font-size: 1.2rem;
+  color: #333;
+  padding-top: 1rem;
+}
+.features .box-container .box button {
+outline: none;
+border: none;
+border-radius: 5rem;
+background: #6c5ce7;
+color: #fff;
+cursor: pointer;
+height: 35px;
+width: 150px;
+font-size: 17px;
+box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+text-transform: capitalize;
+}
+.features .box-container .box p {
+  font-size: .85rem;
+  color: #333;
+  padding: 1rem 0;
+  line-height: 20px;
+}
 
+   /* ----contact-us---- */
+   .contact-us{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  .contact-us h1{
+    margin: 20px;
+    padding-top: 50px;
+    display: inline-block;
+    font-size: 35px;
+    color: #6c5ce7;
+    position: relative;
+    letter-spacing: 2px;
+  }
 
-
-
-
-
+  .contact-us .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-us .row .image img{
+    height: 70vh;
+    width:50vw;
+  }
+  
+  .contact-us .row .form-container{
+    width: 50%;
+    text-align: left;
+    padding:0 5rem;
+  }
+  
+  .contact-us .row .form-container input, textarea{
+    outline: none;
+    border:none;
+    height:4rem;
+    background: none;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .5rem rgba(0,0,0,.2);
+    padding:0 1rem;
+    margin:1rem 0;
+    font-size: 1.6rem;
+  }
+  
+  .contact-us .row .form-container .input-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-us .row .form-container .input-box input[type="text"]{
+    width: 49%;
+  }
+  
+  .contact-us .row .form-container input[type="email"]{
+    width: 100%;
+  }
+  
+  .contact-us .row .form-container textarea{
+    width: 100%;
+    height:20rem;
+    padding:1rem; 
+    resize: none;
+  }
+  
+  .contact-us .row .form-container input[type="submit"]{
+    background-color: #6c5ce7;
+    color:#fff;
+    cursor: pointer;
+    height:4rem; 
+    width: 10rem;;
+  }
+  
+  .contact-us .row .form-container input[type="submit"]:hover{
+    opacity: .8;
+  }
+  
 
 
 
@@ -332,6 +468,19 @@ nav ul li a:hover {
   }
   .services .row .image img {
     width: 100vw;
+  }
+  .contact-us .row .image img {
+    width: 100vw;
+  }
+  .contact-us .row {
+    flex-flow: column;
+  }
+  .contact-us .row .image img {
+    width: 100vw;
+  }
+  .contact-us .row .form-container{
+    width: 100%;
+    padding:0 1.5rem;
   }
 }
 
