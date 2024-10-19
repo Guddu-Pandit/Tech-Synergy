@@ -1,5 +1,5 @@
         // ----For preload----
-const loader = document.querySelector(".loader")
+const loader = document.querySelector(".loader");
 
 window.addEventListener("load", preload);
 
@@ -21,6 +21,20 @@ menuicon.addEventListener("click", () => {
         navlinks.style.maxHeight = "0px";
     }
 });
+
+
+             //  ----For FAQ ----
+const accordionitem = document.querySelectorAll(".accordion");
+const symbol = document.querySelector("span");
+
+for (i=0 ; i<accordionitem.length; i++){
+    accordionitem[i].addEventListener('click', function(){
+      let result = this.classList.toggle('active')
+        if(result){
+            remove.classList('active')
+        }
+    })
+}
 
 
     // ----For No one right click for code----
