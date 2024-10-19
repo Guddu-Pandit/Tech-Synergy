@@ -234,7 +234,7 @@
         </div>
       </div>
       <div class="box-container">
-        <div class="box" data-aos="fade-up"  data-aos-delay="100">
+        <div class="box" data-aos="fade-up" data-aos-delay="100">
           <img src="Images/app_development.svg" alt="" />
           <h3>android development</h3>
           <p>
@@ -320,27 +320,46 @@
     <section class="contact-us">
       <h1>Contact us</h1>
       <div class="row">
-        <div class="image"><img src="Images/contact_us.svg" alt="" srcset=""></div>
+        <div class="image">
+          <img src="Images/contact_us.svg" alt="" srcset="" />
+        </div>
         <div class="form-contanier">
-          <form action="">
+          <form action="https://api.web3forms.com/submit" method="POST" class="form-main">
             <div class="input-box">
-              <input name="name"  type="text" placeholder="first name" required>
-              <input name="name"  type="text" placeholder="last name" required>
+              <input type="hidden" name="access_key" value="164e7017-b5e2-4db0-8f70-896274a81bbe">
+              <input
+                name="name"
+                type="text"
+                placeholder="first name"
+                class="input-text"
+                required
+              />
+              <input
+                name="name"
+                type="text"
+                placeholder="last name"
+                class="input-text"
+                required
+              />
             </div>
-            <input name="email" type="email" placeholder="email" required>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="message" required></textarea>
-            <input type="submit">
+            <input
+              name="email"
+              type="email"
+              placeholder="email"
+              class="input-text input-email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="message"
+              class="input-text"
+              required
+            ></textarea>
+            <button type="submit">submit</button>
           </form>
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
 
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
