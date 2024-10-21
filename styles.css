@@ -214,6 +214,7 @@ nav ul li a:hover {
 .services {
   width: 100vw;
   text-align: center;
+  overflow: hidden !important;
 }
 
 .services h1 {
@@ -276,6 +277,7 @@ nav ul li a:hover {
   width: 100vw;
   text-align: center;
   padding: 0 3%;
+  overflow: hidden !important;
 }
 .features h1 {
   margin: 20px;
@@ -338,6 +340,7 @@ nav ul li a:hover {
   min-height: 100vh;
   width: 100vw;
   text-align: center;
+  overflow: hidden !important;
 }
 
 .contact-us h1 {
@@ -430,6 +433,7 @@ nav ul li a:hover {
   width: 100vw;
   text-align: center;
   padding: 0 1rem;
+  overflow: hidden !important;
 }
 .faq h1 {
   margin: 20px;
@@ -458,7 +462,7 @@ nav ul li a:hover {
 }
 .faq .row .accordion-container .accordion .accordion-header{
   background-color: #6c5ce7;
-  margin:1rem 0;
+  margin:.5rem 0;
   box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
   cursor: pointer;
 }
