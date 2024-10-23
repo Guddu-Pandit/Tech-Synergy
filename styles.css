@@ -491,17 +491,15 @@ nav ul li a:hover {
   font-size: .9rem;
   display: none;
 }
-/* .faq .row .accordion-container .accordion:nth-child(1) .accordion-body{
-  display: block;
-} */
 
-.faq .row .accordion-container .accordion.active .accordion-body{
+.faq .row .accordion-container .accordion:nth-child(1) .accordion-body{
   display: block;
 }
 
-/* .faq .row .accordion-container .accordion.active .accordion-header span::before{
-  content: "-";
+/* .faq .row .accordion-container .accordion.active .accordion-body{
+  display: block;
 } */
+
 
 
 
