@@ -17,7 +17,7 @@ menuicon.addEventListener("click", () => {
   }
 });
 
-                                      //  ----For FAQ ----
+//  ----For FAQ ----
 
 // const accordionitem = document.querySelectorAll(".accordion");
 // const symbol = document.querySelectorAll("span");
@@ -34,41 +34,54 @@ menuicon.addEventListener("click", () => {
 // }
 
 // Select all accordion headers
-document.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', function() {
-      // Collapse all accordion bodies
-      document.querySelectorAll('.accordion .accordion-body').forEach(body => {
-        body.style.display = 'none';
-      });
-  
-      // Expand the next sibling (accordion body) of the clicked header
-      const nextBody = this.nextElementSibling;
-      if (nextBody && nextBody.classList.contains('accordion-body')) {
-        nextBody.style.display = 'block';
-        // nextBody.style.maxHeight = nextBody.scrollHeight + 'px';
-      }
-  
-      // Reset all span texts to '+'
-      document.querySelectorAll('.accordion .accordion-header span').forEach(span => {
-        span.textContent = '+';
-      });
-  
-      // Set the span text of the clicked header to '-'
-      const span = this.querySelector('span');
-      if (span) {
-        span.textContent = '-';
-      }
+document.querySelectorAll(".accordion-header").forEach((header) => {
+  header.addEventListener("click", function () {
+    // Collapse all accordion bodies
+    document.querySelectorAll(".accordion .accordion-body").forEach((body) => {
+      body.style.display = "none";
     });
+
+    // Expand the next sibling (accordion body) of the clicked header
+    const nextBody = this.nextElementSibling;
+    if (nextBody && nextBody.classList.contains("accordion-body")) {
+      nextBody.style.display = "block";
+      // nextBody.style.maxHeight = nextBody.scrollHeight + 'px';
+    }
+
+    // Reset all span texts to '+'
+    document
+      .querySelectorAll(".accordion .accordion-header span")
+      .forEach((span) => {
+        span.textContent = "+";
+      });
+
+    // Set the span text of the clicked header to '-'
+    const span = this.querySelector("span");
+    if (span) {
+      span.textContent = "-";
+    }
   });
-  
+});
 
+const sections = document.querySelectorAll("section");
 
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
 
-
-
-
-
-
+    if (top >= offset && top < offset + height) {
+      navlinks.forEach((links) => {
+        links.classList.remove("active");
+        document
+          .querySelector("header nav ul li a [href*=" + id + "]")
+          .classList.add("active");
+      });
+    }
+  });
+};
 
 
 
