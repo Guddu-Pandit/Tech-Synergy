@@ -97,6 +97,6 @@ window.onscroll = () => {
 
 
 // ----For No one right click for code----
-// document.addEventListener("contextmenu", function(e){
-//     e.preventDefault()
-// },false);
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault()
+},false);
