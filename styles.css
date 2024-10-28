@@ -313,6 +313,7 @@ nav ul li a:hover{
   padding: 2rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
+  height: 35rem;
 }
 .features .box-container .box img {
   height: 10rem;
